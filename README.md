@@ -5,6 +5,9 @@ This project is a physics-based interactive simulation of a Cubic Bézier curve,
 
 The simulation demonstrates the intersection of computational geometry (Bézier mathematics) and procedural animation (Spring-Damper physics), allowing users to interact with control points via mouse input while observing real-time tangent visualizations.
 
+
+https://github.com/user-attachments/assets/ecf5b84a-254c-45a2-8dd5-b9b6a415dbe0
+
 ## Technical Implementation
 
 ### 1. Mathematical Model (Bézier Geometry)
