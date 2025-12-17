@@ -1,0 +1,89 @@
+/* Remove default margins and prevent scrollbars */
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Heading placed on top-left corner */
+#main-heading {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    margin: 0;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 10;
+}
+
+/* Panel that holds sliders and status info */
+#control-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    font-size: 12px;
+    max-width: 200px;
+}
+
+/* Section headings inside the control panel */
+#control-panel h3 {
+    font-size: 14px; 
+    margin: 5px 0 8px 0;
+}
+
+/* Groups slider + label together */
+.control-group {
+    margin-bottom: 8px;
+}
+
+/* Slider labels */
+.control-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* Numeric value shown beside sliders */
+.control-group span {
+    font-weight: normal;
+    float: right;
+    min-width: 25px;
+    text-align: right;
+}
+
+/* Shows current control mode */
+#control-status {
+    font-weight: bold;
+    color: #007bff;
+    padding-top: 2px;
+}
+
+/* Small helper text */
+#control-panel small {
+    display: block;
+    font-size: 10px;
+    line-height: 1.2;
+    margin-top: 3px;
+}
+
+/* Divider line */
+.divider {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 8px 0;
+}
+
+/* Canvas background */
+#bezier-canvas { 
+    display: block; 
+    background-color: white;
+}

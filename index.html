@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags for character encoding and responsive layout -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in browser tab -->
+    <title>Cubic Bézier Curve</title>
+
+    <!-- External stylesheet for layout and UI styling -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Main heading displayed on top of the canvas -->
+<h1 id="main-heading">Bezier Rope Simulation</h1>
+
+<!-- Canvas element where the Bézier curve and animation are drawn -->
+<canvas id="bezier-canvas"></canvas>
+
+<!-- Control panel for adjusting physics parameters -->
+<div id="control-panel">
+    <h3>Physics Parameters</h3>
+
+    <!-- Slider to control spring stiffness -->
+    <div class="control-group">
+        <label for="springK">
+            Spring K (Stiffness): <span id="k-value">50</span>
+        </label>
+        <input type="range" id="springK" min="10" max="200" step="5" value="50">
+    </div>
+
+    <!-- Slider to control damping (drag force) -->
+    <div class="control-group">
+        <label for="damping">
+            Damping (Drag): <span id="d-value">8</span>
+        </label>
+        <input type="range" id="damping" min="1" max="50" step="1" value="8">
+    </div>
+
+    <!-- Slider to control tangent line length for visualization -->
+    <div class="control-group">
+        <label for="tangentLength">
+            Tangent Length: <span id="t-value">50</span>
+        </label>
+        <input type="range" id="tangentLength" min="10" max="150" step="5" value="50">
+    </div>
+
+    <!-- Visual separator -->
+    <div class="divider"></div>
+
+    <!-- Shows current interaction mode -->
+    <h3>Control Status</h3>
+    <div class="control-group">
+        <p style="margin: 0;">
+            Mode: <span id="control-status">ALL (Both Pts)</span>
+        </p>
+        <small>
+            Click on P1 or P2 to select a point.  
+            Click elsewhere to switch between ALL and LOCKED modes.
+        </small>
+    </div>
+</div>
+
+<!-- Main JavaScript file that handles logic, physics, and drawing -->
+<script src="main.js"></script>
+</body>
+</html>
